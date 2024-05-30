@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 820px;
+}
+
+.main {
+  display: flex;
+}
+
+.mainRight {
+  margin-left: 94px;
+  height: 734px;
+  display: flex;
+  flex-direction: column;
+}
+
+.acctManage {
+  width: 1068px;
+  height: 70px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 19px;
+}
+
+.acctManage .manageLeft {
+  width: 600px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.acctManage .manageLeft .search {
+  width: 488px;
+  padding-inline: 24px;
+  padding-block: 11px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  display: flex;
+}
+
+.searchIcon {
+  height: 48px;
+  width: 48px;
+  background-image: url("http://localhost/seed/image/search.png");
+  margin-right: 28px;
+}
+
+.acctManage .manageLeft .search input {
+  width: 370px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #6f7070;
+  border: none;
+  outline: none;
+}
+
+.acctManage .manageLeft .graphIcon {
+  height: 70px;
+  width: 70px;
+  background-image: url("http://localhost/seed/image/graph.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  opacity: 1;
+  margin-left: 20px;
+}
+
+.addButton {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  opacity: 1;
+  img {
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.tableclass {
+  border-collapse: collapse;
+  width: 1068px;
+  height: 560px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+
+tr:nth-child(2n-1) {
+  height: 55px;
+  width: 100%;
+  background: #e5fff7;
+}
+
+tr:nth-child(2n-1) {
+  height: 55px;
+}
+
+.size72 {
+  width: 72px;
+}
+
+.size108 {
+  width: 108px;
+}
+
+.userTable td {
+  font-size: 15px;
+}
+
+.mainRight {
+  display: flex;
+  width: calc(100vw - 72px);
+  height: 100vh;
+  flex-direction: column;
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+}
+
+.edit_btn,
+.del_btn {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  border-width: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+table.acctTable {
+  width: 1068px;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 0px;
+  border-style: solid;
+  color: #000000;
+}
+
+table.acctTable th {
+  background-color: white;
+}
+
+table.acctTable td,
+table.acctTable th {
+  border-width: 0px;
+  padding: 5px;
+  height: 55px;
+  color: #6f7070;
+}
+
+table.acctTable th {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+table.acctTable td div {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  color: #6f7070;
+  font-size: 15px;
+}
+
+table.acctTable td .dollar {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: #6f7070;
+}
+
+table.acctTable td .dollar span:first-child {
+  width: 20px;
+  text-align: center;
+}
+
+table.acctTable td .dollar span:nth-child(2) {
+  width: 113px;
+  text-align: center;
+}
+
+table.acctTable td {
+  padding: 4px;
+}
+
+.tablecontainer {
+  width: 1068px;
+  height: 560px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* table.acctTable td:first-child {
+  padding-left: 16px;
+} */
+table.acctTable td .chatbot {
+  position: relative;
+  width: 36px;
+  border-width: 0;
+  background-color: #61d3b1;
+  background-image: url("http://localhost/seed/image/chat.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+table.acctTable td .chatbot span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  border-radius: 50%;
+  font-size: 1px;
+  color: white;
+}
+
+table.acctTable td .chatbot span text {
+  transform: scale(0.8);
+}
+
+.pageListContainer {
+  position: fixed;
+  left: 100px;
+  height: 60px;
+  bottom: 0px;
+}
+
+.pageListContainer ul {
+  height: 100%;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.pageListContainer ul .number {
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  border: 1px solid #bebebe;
+  border-radius: 8px;
+  color: black;
+  text-align: center;
+  line-height: 39px;
+  margin-right: 17px;
+}
+
+.pageListContainer ul .active {
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  border: 1px solid #61d3b1;
+  color: #61d3b1;
+  text-align: center;
+  line-height: 39px;
+  margin-right: 17px;
+}

@@ -1,0 +1,347 @@
+.uploadPlanDiv {
+  height: 170px;
+  width: 1059px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+  background: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-inline: 46px;
+  padding-top: 22px;
+
+  .uploadInputDiv {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 18px;
+      color: #6f7070;
+      margin-right: 22px;
+      align-self: center;
+    }
+    .inputRow1 {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 28px;
+
+      input {
+        width: 290px;
+        height: 41px;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+      }
+    }
+    .inputRow2 {
+      display: flex;
+      align-items: center;
+      div {
+        display: flex;
+      }
+
+      span {
+        margin-right: 56px;
+      }
+
+      input {
+        width: 459px;
+        height: 41px;
+        border: 1px solid #dddddd;
+        margin-right: 15px;
+        border-radius: 5px;
+      }
+      button {
+        width: 136px;
+        height: 34px;
+        background: #02c187 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        border: 0px;
+        color: white;
+        font-size: 18px;
+        font-weight: Arial;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          margin: 0;
+        }
+
+        img {
+          width: 18px;
+          height: 18px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 820px;
+}
+
+.main {
+  display: flex;
+}
+
+.mainRight {
+  margin-left: 94px;
+  height: 734px;
+  display: flex;
+  flex-direction: column;
+}
+
+.customerManage {
+  width: 1068px;
+  height: 70px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 19px;
+}
+
+.customerManage .manageLeft {
+  width: 600px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.customerManage .manageLeft .search {
+  width: 488px;
+  padding-inline: 24px;
+  padding-block: 11px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  display: flex;
+}
+
+.searchIcon {
+  height: 48px;
+  width: 48px;
+  background-image: url("http://localhost/seed/image/search.png");
+  margin-right: 28px;
+}
+
+.customerManage .manageLeft .search input {
+  width: 370px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #6f7070;
+  border: none;
+  outline: none;
+}
+
+.customerManage .manageLeft .graphIcon {
+  height: 70px;
+  width: 70px;
+  background-image: url("http://localhost/seed/image/graph.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  opacity: 1;
+  margin-left: 20px;
+}
+
+.calButton {
+  width: 234px;
+  height: 73px;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.calButton img:nth-child(1) {
+  width: 107px;
+  height: 37px;
+}
+
+.calButton img:nth-child(2) {
+  width: 37px;
+  height: 37px;
+}
+
+.tableclass {
+  border-collapse: collapse;
+  width: 1068px;
+  height: 560px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+
+tr:nth-child(2n-1) {
+  height: 55px;
+  width: 100%;
+  background: #e5fff7;
+}
+
+tr:nth-child(2n-1) {
+  height: 55px;
+}
+
+.size72 {
+  width: 72px;
+}
+
+.size108 {
+  width: 108px;
+}
+
+.userTable td {
+  font-size: 15px;
+}
+
+.mainRight {
+  display: flex;
+  width: calc(100vw - 72px);
+  height: 100vh;
+  flex-direction: column;
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+}
+
+.edit_btn,
+.del_btn {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  border-width: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+table.planTable {
+  width: 1068px;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 0px;
+  border-style: solid;
+  color: #000000;
+}
+
+table.planTable th {
+  background-color: white;
+}
+
+table.planTable td,
+table.planTable th {
+  border-width: 0px;
+  padding: 5px;
+  height: 55px;
+  color: #6f7070;
+}
+
+table.planTable th {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+table.planTable td div {
+  height: 40px;
+  // background-color: white;
+  width: 100%;
+  // border: 1px solid #dddddd;
+  border-radius: 5px;
+  line-height: 40px;
+  text-align: center;
+  color: #6f7070;
+  font-size: 15px;
+}
+
+table.planTable td {
+  padding: 4px;
+}
+
+.tablecontainer {
+  width: 1068px;
+  height: 560px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* table.customTable td:first-child {
+  padding-left: 16px;
+} */
+table.planTable td .chatbot {
+  position: relative;
+  width: 36px;
+  border-width: 0;
+  background-color: #61d3b1;
+  background-image: url("http://localhost/seed/image/chat.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+table.planTable td .chatbot span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  border-radius: 50%;
+  font-size: 1px;
+  color: white;
+}
+
+.pageListContainer {
+  position: fixed;
+  left: 100px;
+  height: 60px;
+  bottom: 0px;
+}
+
+.pageListContainer ul {
+  height: 100%;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.pageListContainer ul .number {
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  border: 1px solid #bebebe;
+  border-radius: 8px;
+  color: black;
+  text-align: center;
+  line-height: 39px;
+  margin-right: 17px;
+}
+
+.pageListContainer ul .active {
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  border: 1px solid #61d3b1;
+  color: #61d3b1;
+  text-align: center;
+  line-height: 39px;
+  margin-right: 17px;
+}

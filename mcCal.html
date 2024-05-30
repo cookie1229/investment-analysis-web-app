@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content='width=1168px' name='viewport' />
+    <link rel="stylesheet" href="./css/header/header.css">
+    <link rel="stylesheet" href="./css/mainLeft/mainLeft.css">
+    <link rel="stylesheet" href="./css/formPB/formPB.css">
+
+
+    <title>welcome to seed
+
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header text {
+            font-size: 22px;
+            font-weight: bold;
+            color: #61D3B1;
+            letter-spacing: 0.88px;
+        }
+    </style>
+    <style type="text/css">
+        /* 打印样式设置 */
+        @media print {
+            .noprint {
+                display: none;
+            }
+
+            .print {
+                margin: 0;
+                min-width: 1300px;
+            }
+
+            .pagebreak {
+                page-break-after: always;
+            }
+
+            /*分页控制 */
+            .infos-item {
+                page-break-inside: avoid;
+            }
+
+            /*内容不分页*/
+            /*打印外边距设置*/
+            @page {
+                size: auto;
+                /*设置打印纸张大小，如A4*/
+                margin: 0;
+            }
+
+            /*设置打印纸边距*/
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- menu_left -->
+
+    <!-- menu_left  end -->
+    <div>
+        <div class='header'>
+            <div class="logo"></div>
+            <text style="font-size: 20px; color: black; font-weight:200;">按揭計算系統</text>
+            <div class="headerRight">
+                <div class="search"></div>
+                <div class="profile"></div>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="mainLeft">
+                <ul class="nav">
+                    <a href="index.php">
+                        <li><img src="./image/home.png"><span>首頁</span></li>
+                    </a>
+                    <!-- <li><img src="./image/menu.png"><span>參與空間</span></li>
+                    <li><img src="./image/navapps.png"><span>應用程序</span></li>
+                    <li><img src="./image/person.png"><span>個人空間</span></li> -->
+
+                </ul>
+            </div>
+            <div class="mainRight">
+                <!--startprint-->
+                <form action="cal.php/savePB" method="POST" id="pbform">
+                    <div class="tablist">
+
+
+
+                        <div class="formContainer">
+
+                            <div class="clientForm display" name="基本資料及分配"
+                                style="min-height: 600px; padding-top: 30px;">
+
+
+
+                                <div class="mortgage_detail" style="display: block; overflow: visible;">
+
+                                    <div class="bankInvestPart">
+                                        <img src="./image/property.png">
+                                        <div class="bankInvestPartA">
+                                            <span>
+                                                物業估值：
+                                            </span>
+                                            <div class="property_value_mInput">
+                                                <input type="text" name="property_value_m">
+                                                <span class="unit">HKD</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="bankInvestPartA" style="margin-left: 53px;">
+                                            <span>
+                                                按揭百分比：
+                                            </span>
+                                            <div class="mortgage_percent_mInput">
+                                                <input type="text" name="mortgage_percent_m">
+                                                <span class="unit">%</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="mortgage_amount_m">
+                                        <div class="right"></div>
+                                        <span>
+                                            按揭總額：
+                                        </span>
+                                        <div class="mortgage_amount_mInput">
+                                            <input type="text" name="mortgage_amount_m" readonly>
+                                            <span class="unit">HKD</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="bankInvestPart">
+                                        <img src="./image/age.png">
+                                        <div class="bankInvestPartA">
+                                            <span>
+                                                年齡：
+                                            </span>
+                                            <div class="ageInput">
+                                                <input type="text" name="age">
+
+                                            </div>
+                                        </div>
+
+                                        <div class="bankInvestPartA" style="margin-left: 53px;">
+                                            <span>
+                                                銀行按揭基準：
+                                            </span>
+                                            <div class="up_limitInput">
+                                                <input type="text" name="up_limit">
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="payment_year">
+                                        <div class="right"></div>
+                                        <span>
+                                            供款年期：
+                                        </span>
+                                        <div class="payment_yearInput">
+                                            <input type="text" name="payment_year">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="int_rate_m">
+                                        <img src="./image/int_rarte_m.png">
+                                        <span>
+                                            按揭利率：
+                                        </span>
+                                        <div class="int_rate_mInput">
+                                            <input type="text" name="int_rate_m">
+                                            <span class="unit">%</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="pmt">
+                                        <div class="right"></div>
+                                        <span>
+                                            Monthly Payment：
+                                        </span>
+                                        <div class="pmtInput">
+                                            <input type="text" name="pmt">
+                                            <span class="unit">HKD</span>
+
+                                        </div>
+                                        <div class="detail_btn">細節</div>
+
+                                    </div>
+
+                                    <div class="pmt_detail">
+                                        <div class="pmt_detail_header">
+                                            <span>Monthly Payment</span>
+                                            <span class="hidden_btn"></span>
+                                        </div>
+                                        <div class="pmt_tableContainer">
+                                            <table class="pmt_table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Year End</th>
+                                                        <th>Mortgage payment</th>
+                                                        <th>Remain Loan in Year</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="pmt_table_tr">
+                                                        <td>
+                                                            <div class="year_end">0</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="mortgage_payment"></div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="remain_loan_in_year"></div>
+                                                        </td>
+                                                    </tr>
+
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </div>
+
+
+                </form>
+                <!--endprint-->
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    const mortgage_amount_mInput = document.querySelector(
+        ".mortgage_amount_mInput input"
+    );
+    const property_value_mInput = document.querySelector(
+        ".property_value_mInput input"
+    );
+    const mortgage_percent_mInput = document.querySelector(
+        ".mortgage_percent_mInput input"
+    );
+    const payment_yearInput = document.querySelector(".payment_yearInput input");
+    const pb_percentInput = document.querySelector(".pb_percentInput input");
+    const pb_partInput = document.querySelector(".pb_partInput input");
+    const pf_percentInput = document.querySelector(".pf_percentInput input");
+    const pf_partInput = document.querySelector(".pf_partInput input");
+    const ageIput = document.querySelector(".ageInput input");
+    const up_limitInput = document.querySelector(".up_limitInput input");
+
+    const int_rate_mInput = document.querySelector(".int_rate_mInput input");
+    const pmtInput = document.querySelector(".pmtInput input");
+    const year_endInput = document.getElementsByClassName("year_end");
+    const mortgage_paymentInput =
+        document.getElementsByClassName("mortgage_payment");
+    const remain_loan_in_yearInput = document.getElementsByClassName(
+        "remain_loan_in_year"
+    );
+
+    let mortgage_amount_m;
+    let property_value_m;
+    let mortgage_percent_m;
+    let age;
+    let up_limit;
+    let payment_year;
+    let n;
+    let int_rate_m;
+    let pmt;
+    let int_rate_momthly_m;
+    let year_end;
+    let mortgage_payment;
+    let remain_loan_in_year;
+
+    function updateMortgageAmountM() {
+        let property_value_m =
+            parseFloat(property_value_mInput.value.replace(/,/g, "")) || 0;
+        //console.log(property_value_pbInput.value);
+        let mortgage_percent_m = parseFloat(mortgage_percent_mInput.value) || 0;
+        let mortgage_amount_m = (
+            property_value_m *
+            (mortgage_percent_m / 100)
+        ).toFixed(0);
+        mortgage_amount_mInput.value = parseFloat(mortgage_amount_m).toLocaleString();
+    }
+
+    function updatePaymentYear() {
+        age = parseFloat(ageIput.value) || 0;
+        up_limit = parseFloat(up_limitInput.value) || 0;
+        payment_year = up_limit - age;
+        if (payment_year > 30) {
+            payment_year = 30;
+            payment_yearInput.value = parseFloat(payment_year).toLocaleString();
+        } else if (payment_year >= 0) {
+            payment_year = payment_year;
+            payment_yearInput.value = parseFloat(payment_year).toLocaleString();
+        } else {
+            payment_year = 0;
+            payment_yearInput.value = parseFloat(payment_year).toLocaleString();
+        }
+    }
+
+    function updatePMT() {
+        updatePaymentYear();
+        const payment_year =
+            parseFloat(payment_yearInput.value.replace(/,/g, "")) || 0;
+        const n = payment_year * 12;
+        const int_rate_m = parseFloat(int_rate_mInput.value) || 0;
+        const int_rate_monthly_m = int_rate_m / 12 / 100;
+        const mortgage_amount_m =
+            parseFloat(mortgage_amount_mInput.value.replace(/,/g, "")) || 0;
+        const numerator =
+            mortgage_amount_m *
+            int_rate_monthly_m *
+            Math.pow(1 + int_rate_monthly_m, n);
+        const denominator = Math.pow(1 + int_rate_monthly_m, n);
+        const pmt = numerator / (denominator - 1) || 0;
+        pmtInput.value = parseFloat(pmt.toFixed(0)).toLocaleString();
+
+        for (let i = 1; i <= payment_year; i++) {
+            const months = i * 12;
+            const remaining_loan = (
+                mortgage_amount_m * Math.pow(1 + int_rate_monthly_m, months) -
+                (pmt * (Math.pow(1 + int_rate_monthly_m, months) - 1)) /
+                int_rate_monthly_m
+            ).toFixed(0);
+            remain_loan_in_yearInput[i].innerHTML =
+                parseFloat(remaining_loan).toLocaleString();
+            remain_loan_in_yearInput[0].innerHTML =
+                parseFloat(mortgage_amount_m).toLocaleString();
+            mortgage_payment = pmt * 12;
+            mortgage_paymentInput[0].innerHTML = "0";
+            mortgage_paymentInput[i].innerHTML = parseFloat(
+                mortgage_payment.toFixed(0)
+            ).toLocaleString();
+
+            //console.log(i + " year(s): " + remaining_loan);
+        }
+    }
+
+
+
+
+    const pmt_tr = document.getElementsByClassName("pmt_table_tr");
+
+    var pmt_table_tr = document.querySelector('.pmt_table_tr');
+    var pmt_table = document.querySelector('.pmt_table');
+
+
+
+    for (var i = 1; i <= 30; i++) {
+        var clonedRow = pmt_table_tr.cloneNode(true);
+        var yearEndDiv = clonedRow.querySelector('.year_end');
+        var mortgagePaymentDiv = clonedRow.querySelector('.mortgage_payment');
+        var remainLoanDiv = clonedRow.querySelector('.remain_loan_in_year');
+
+        yearEndDiv.innerHTML = i;
+        mortgagePaymentDiv.innerHTML = '';
+        remainLoanDiv.innerHTML = '';
+
+        pmt_table.appendChild(clonedRow);
+    }
+
+
+    var hidden_btn = document.querySelector(".hidden_btn")
+    var detail_btn = document.querySelector(".detail_btn")
+    var pmt_detail = document.querySelector(".pmt_detail")
+    detail_btn.addEventListener("click", function () {
+        pmt_detail.style.display = 'block'
+        pmt_detail.style.zIndex = '20'
+
+    })
+    hidden_btn.addEventListener("click", function () {
+        pmt_detail.style.display = 'none'
+    })
+    property_value_mInput.addEventListener("input", function () {
+        var numericValue =
+            parseFloat(property_value_mInput.value.replace(/,/g, "")) || 0;
+        property_value_mInput.value = numericValue.toLocaleString();
+        updateMortgageAmountM(), updatePMT();
+
+    });
+    mortgage_percent_mInput.addEventListener("input", function () {
+        updateMortgageAmountM();
+        updatePMT();
+    });
+
+    up_limitInput.addEventListener("input", function () {
+        updatePaymentYear();
+        updatePMT();
+
+    });
+    int_rate_mInput.addEventListener("input", function () {
+        updatePMT();
+
+    });
+</script>

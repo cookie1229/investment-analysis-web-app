@@ -1,0 +1,68 @@
+.main .mainLeft {
+  width: 79px;
+  background-color: #61d3b1;
+  height: 100vh;
+  z-index: 100;
+  position: fixed;
+  color: white;
+  overflow: hidden;
+  top: 84px;
+}
+
+.main ul {
+  width: 79px;
+  background-color: #61d3b1;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+.main ul.show {
+  width: 228px;
+  background-color: #61d3b1;
+  height: 100vh;
+  z-index: 100;
+  position: fixed;
+  transition: 0.5s;
+}
+
+.show {
+  color: white;
+}
+
+.show span {
+  display: block;
+  width: 100px;
+  text-align: left;
+  height: 40px;
+}
+
+.mainLeft li:first-child {
+  margin-top: 30px;
+}
+
+.mainLeft li {
+  list-style: none;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-block: 60px;
+}
+
+.mainLeft li img {
+  width: 40px;
+  height: 40px;
+  margin-inline: 20px;
+}
+
+.mainLeft li span {
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

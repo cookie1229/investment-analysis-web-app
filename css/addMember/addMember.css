@@ -1,0 +1,173 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.mainRight {
+  margin-left: 94px;
+}
+
+.memberForm {
+  display: none;
+  width: 1073px;
+  height: 698px;
+  background-color: bisque;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  padding-left: 50px;
+}
+.memberForm .question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 36px;
+}
+.memberForm .memberName {
+  margin-top: 46px;
+  font-size: 24px;
+}
+.memberForm .questionTitle {
+  width: 120px;
+  height: 33px;
+  margin-right: 133px;
+  font-size: 24px;
+}
+.memberForm .questionInput input {
+  width: 498px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+  opacity: 1;
+  padding-left: 25px;
+  font-size: 25px;
+}
+.memberForm .ratio {
+  display: flex;
+}
+.memberForm .ratio input {
+  width: 28px;
+}
+.memberForm .ratio label {
+  width: 92px;
+  text-align: left;
+  font-size: 25px;
+  line-height: 40px;
+  margin-left: 28px;
+  margin-right: 146px;
+}
+.memberForm .remark input {
+  height: 77px;
+}
+
+.formContainer {
+  width: 1073px;
+  margin-bottom: 128px;
+  background-color: bisque;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  margin-top: 29px;
+  position: relative;
+}
+
+.display {
+  display: block;
+}
+
+.formHeader {
+  width: 1073px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding-left: 31px;
+  padding-right: 25px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.4);
+}
+
+.formTitle {
+  width: 123px;
+  height: 33px;
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 3px solid #68dfbb;
+}
+
+.innerTitle {
+  width: 96px;
+  height: 33px;
+  text-align: left;
+  font-size: 24px;
+  margin-left: -1000px;
+  margin-top: -21px;
+}
+
+.innerTitle_show {
+  width: 96px;
+  height: 33px;
+  text-align: left;
+  font-size: 24px;
+  margin-left: 24px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.formRight {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.formRight button {
+  width: 101px;
+  height: 34px;
+  border-width: 0px;
+  border-radius: 17px;
+  font-size: 18px;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.cancelBtn {
+  background-color: #c3c3c3;
+  color: #6e6e6e;
+  background-image: url("../../image/cancel.png");
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.saveBtn {
+  background-color: #68dfbb;
+  color: white;
+}
+
+.saveBtn input {
+  font-size: 18px;
+  background-color: #68dfbb;
+  border: none;
+  color: white;
+  height: 100%;
+  border-radius: 17px;
+}
+
+.formRight .saveBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saveBtn input {
+  font-size: 18px;
+  background-color: #68dfbb;
+  border: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../image/save.png");
+  background-size: cover;
+}
